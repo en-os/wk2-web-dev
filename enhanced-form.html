@@ -1,0 +1,166 @@
+<!DOCTYPE7 html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>MediGas Solutions</title>
+</head>
+<body>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Oxygen_cylinder_icon.svg/1024px-Oxygen_cylinder_icon.svg.png"
+       alt="MediGas Solutions Logo" width="100">
+  <h1>MediGas Solutions</h1>
+  <nav>
+    <a href="#about">About Us</a> |
+    <a href="#services">Our Services</a> |
+    <a href="#products">Products</a> |
+    <a href="#order">Order Form</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- About Us -->
+  <section id="about">
+    <details>
+      <summary><strong>About Us</strong></summary>
+      <p>
+        MediGas Solutions is a trusted provider of <strong>medical-grade oxygen</strong> for hospitals and home therapy.
+        Our process meets international standards for safety and reliability.
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Oxygen_cylinders_in_hospital.jpg"
+           alt="Medical Oxygen Cylinders" width="500">
+    </details>
+  </section>
+
+  <!-- Our Services -->
+  <section id="services">
+    <details>
+      <summary><strong>Our Services</strong></summary>
+      <ul>
+        <li>Production of high-purity medical oxygen</li>
+        <li>Hospital bulk oxygen supply & pipeline installation</li>
+        <li>Home delivery for oxygen therapy</li>
+        <li>Maintenance of oxygen storage & delivery equipment</li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- Safety Audio -->
+  <section>
+    <h2>Safety Instructions</h2>
+    <audio controls>
+      <source src="https://cdn.pixabay.com/download/audio/2023/05/16/audio_0c71e44a24.mp3?filename=safety-announcement-12345.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p><em>Please listen carefully to the oxygen safety instructions before handling cylinders.</em></p>
+  </section>
+
+  <!-- Real Oxygen Production Video -->
+  <section>
+    <h2>Oxygen Production Process</h2>
+    <video controls width="500">
+      <source src="https://cdn.pixabay.com/download/video/2022/05/16/video-7132f5a8df.mp4?attachment" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <h2>Our Products & Prices</h2>
+    <table border="1">
+      <tr>
+        <th>Product</th>
+        <th>Capacity</th>
+        <th>Price (KES)</th>
+      </tr>
+      <tr>
+        <td>Medical Oxygen Cylinder</td>
+        <td>6.8 m³</td>
+        <td>15,000</td>
+      </tr>
+      <tr>
+        <td>Medical Oxygen Cylinder</td>
+        <td>1.5 m³</td>
+        <td>6,500</td>
+      </tr>
+      <tr>
+        <td>Oxygen Concentrator</td>
+        <td>5 L/min</td>
+        <td>45,000</td>
+      </tr>
+      <tr>
+        <td>Refill Service</td>
+        <td>1.5 m³ Cylinder</td>
+        <td>1,000</td>
+      </tr>
+      <tr>
+        <td>Refill Service</td>
+        <td>6.8 m³ Cylinder</td>
+        <td>2,500</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Order Form -->
+  <section id="order">
+    <h2>Place Your Order</h2>
+    <form>
+      <fieldset>
+        <legend>Customer Information</legend>
+
+        <!-- Readonly customer ID -->
+        <label>Customer ID:</label>
+        <input type="text" value="CUST-001" readonly><br><br>
+
+        <label>Full Name:</label>
+        <input type="text" name="fullname" placeholder="e.g. John Doe" 
+               minlength="3" maxlength="50" required autocomplete="name"><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="e.g. johndoe@example.com" 
+               required autocomplete="email"><br><br>
+
+        <label>Phone:</label>
+        <input type="tel" name="phone" placeholder="e.g. 0712345678" 
+               pattern="[0-9]{10}" title="Enter a 10-digit phone number" 
+               required autocomplete="tel"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Product Selection</legend>
+        <select name="product" required autocomplete="off">
+          <option value="">--Select--</option>
+          <option>Medical Oxygen Cylinder 6.8 m³</option>
+          <option>Medical Oxygen Cylinder 1.5 m³</option>
+          <option>Oxygen Concentrator 5 L/min</option>
+          <option>Refill 1.5 m³ Cylinder</option>
+          <option>Refill 6.8 m³ Cylinder</option>
+        </select><br><br>
+
+        <label>Quantity:</label>
+        <input type="number" name="quantity" placeholder="1" min="1" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Delivery Details</legend>
+        <textarea name="address" rows="3" placeholder="Enter delivery address" 
+                  required autocomplete="street-address"></textarea><br><br>
+
+        <label>Preferred Delivery Date:</label>
+        <input type="date" name="delivery_date" required>
+      </fieldset>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+</main>
+
+<footer id="contact">
+  <p>Contact Us: +254 712 345 678 | info@medigas.co.ke</p>
+  <p>&copy; 2025 MediGas Solutions. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
