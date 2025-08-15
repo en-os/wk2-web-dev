@@ -6,7 +6,7 @@ Demonstrates:
 
 ✓Embedding media content such as images, audio, or video using semantic HTML5 elements.
 
-✓Building tructured HTML5 forms that are both usable and visually intuitive.
+✓Building structured HTML5 forms that are both usable and visually intuitive.
 
 ✓Appling various HTML5 form attributes to improve user interaction.
 
